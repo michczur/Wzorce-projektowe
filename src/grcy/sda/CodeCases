@@ -1,0 +1,19 @@
+camel case:
+
+getNextPayment
+każde słowo w nazwie z wyjątkiem pierwszego zaczyna się dużą literą
+
+snake case:
+
+get_next_payment
+pomiędzy słowami jest _
+stosowane namiętnie w bazach danych
+
+kebab case
+get-next-payment
+stosowane raczej w nazwach plików html, jsp, ... ogólnie stron internetowych
+
+
+Pascal case:
+GetNextPayment
+jak camel case ale pierwszy wyraz też z dużej
