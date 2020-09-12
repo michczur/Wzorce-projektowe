@@ -1,0 +1,6 @@
+Error - obiekty rzucane prze JVM (błędy krytyczne) np. StackOverflowError, OutOfMemoryError
+
+Exception - zwykłe wyjątki
+    dzielą się na:
+    Checked - sprawdzane, musimy dorobić obsługę
+    Unchecked - niesprawdzane, możemy ale nie musimy dorabiać obsługi
