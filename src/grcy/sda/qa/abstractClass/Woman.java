@@ -24,8 +24,19 @@ public class Woman extends Person {
         this.age = age;
     }
 
-    public Woman(String name, String surname, int age, boolean canRun) {
+    public Woman(String name, String surname, int age, boolean canRun ) {
         super(name, surname);
+        this.age = age;
+        this.canRun = canRun;
+    }
+
+    public Woman(String name, String surname, Integer pesel, int age, boolean canRun) {
+        super(name, surname, pesel);
+        this.age = age;
+        this.canRun = canRun;
+    }
+
+    public Woman(int age, boolean canRun) {
         this.age = age;
         this.canRun = canRun;
     }
