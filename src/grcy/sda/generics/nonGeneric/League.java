@@ -15,8 +15,8 @@ public class League {
         teams = new ArrayList<>();
     }
 
-    public void addTeam(Team team){
-        if(!teams.contains(team)){
+    public void addTeam(Team team) {
+        if(!teams.contains(team)) {
             teams.add(team);
         }
     }
@@ -24,6 +24,6 @@ public class League {
     public void printTable() {
         Collections.sort(teams);
         System.out.println(leagueName + " table:");
-        teams.forEach((x-> System.out.println(x.getName() +" : "+x.getPoints())));
+        teams.forEach(x -> System.out.println(x.getName() + " : " + x.getPoints()));
     }
 }

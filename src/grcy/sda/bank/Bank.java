@@ -33,7 +33,7 @@ public class Bank {
 
     // TODO: 18.09.2020 lista klientów banku (z listą rachunków(z saldem lub bez))
     // TODO: 18.09.2020 lista rachunków klienta (z saldem lub bez)
-    //TODO: 18.09.2020 OPT(lista rachunków (z saldami lub bez))
+    // TODO: 18.09.2020 OPT(lista rachunków (z saldami lub bez))
 
     @Override
     public String toString() {

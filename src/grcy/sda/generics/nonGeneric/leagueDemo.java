@@ -4,12 +4,12 @@ import grcy.sda.generics.FootballTeam;
 import grcy.sda.generics.Team;
 import grcy.sda.generics.VolleyballTeam;
 
-public class leagueDemo {
+public class LeagueDemo {
     public static void main(String[] args) {
         League league = new League("Primiera Division");
 
         Team team1 = new FootballTeam("FC Barcelona");
-        Team team2 = new FootballTeam("Real Madrit");
+        Team team2 = new FootballTeam("Real Madrid CF");
         Team team3 = new FootballTeam("Valencia CF");
         team1.setPoints(20);
         team2.setPoints(18);
@@ -19,9 +19,11 @@ public class leagueDemo {
         league.addTeam(team3);
         league.printTable();
 
-        System.out.println("===================");
+        System.out.println("=================================");
         Team team4 = new VolleyballTeam("Asseco Resovia");
+        team4.setPoints(22);
+        league.addTeam(team4);
 
-
+        league.printTable();
     }
 }

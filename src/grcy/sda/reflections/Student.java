@@ -1,9 +1,10 @@
 package grcy.sda.reflections;
 
 public class Student extends Person {
-    private String name;    // dostep w klasie student (i klasach wewnetrznych dla studenta)
-    protected String surname; // dostep w pakiecie i klasach dziedziczacych po student
-    String uniwersity; // dosteo w tym samym pakiecie
+    private String name; //dostęp tylko w klasie Student (w klasach wewnętrznych dla Student też)
+    protected String surname; //dostęp w pakiecie i klasach dziedziczących po Student (te klasy mogą być w innych pakietach
+
+    String university; //dostęp w tym samym pakiecie
 
     public String getName() {
         return name;
@@ -21,16 +22,16 @@ public class Student extends Person {
         this.surname = surname;
     }
 
-    public String getUniwersity() {
-        return uniwersity;
+    public String getUniversity() {
+        return university;
     }
 
-    public void setUniwersity(String uniwersity) {
-        this.uniwersity = uniwersity;
+    public void setUniversity(String university) {
+        this.university = university;
     }
 
     private String getStudentInfo() {
-        return  "name" + name + '\n';
-    }
+        return " name= " + name + "\n surname= " + surname;
 
+    }
 }

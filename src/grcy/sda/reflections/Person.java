@@ -19,7 +19,8 @@ public class Person {
     public void setGender(String gender) {
         this.gender = gender;
     }
-    private String getInfo(){
-        return "cos tam";
+
+    private String getInfo() {
+        return " age= " + age + "\n gender= " + gender;
     }
 }
