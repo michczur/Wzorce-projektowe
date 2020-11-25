@@ -4,7 +4,7 @@ import grcy.sda.generics.FootballTeam;
 import grcy.sda.generics.Team;
 import grcy.sda.generics.VolleyballTeam;
 
-public class LeagueDemo {
+public class leagueDemo {
     public static void main(String[] args) {
         League league = new League("Primiera Division");
 

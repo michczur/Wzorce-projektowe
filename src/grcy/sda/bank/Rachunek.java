@@ -2,26 +2,26 @@ package grcy.sda.bank;
 
 import java.util.Objects;
 
-public class Rachunek {
+public class Rachunek extends Klient{
     private String typRachunku;
     private int stanRachunku;
-    private final int UnikalnyNrRachunku;
+    private final int UnikalnyNrRachunku=hashCode();
 
-    public Rachunek(String typRachunku, int stanRachunku) {
-        this.typRachunku = typRachunku;
-        this.stanRachunku = stanRachunku;
-        UnikalnyNrRachunku = hashCode();
+    public Rachunek() {
+        typRachunku=null;
+        stanRachunku=0;
+        System.out.println("tworzę nowy rachunek");
     }
 
-    private String getTypRachunku() {
+    public String getTypRachunku() {
         return typRachunku;
     }
 
-    private void setTypRachunku(String typRachunku) {
+    public void setTypRachunku(String typRachunku) {
         this.typRachunku = typRachunku;
     }
 
-    private int getStanRachunku() {
+    public int getStanRachunku() {
         return stanRachunku;
     }
 
@@ -41,13 +41,12 @@ public class Rachunek {
         }
         if (kwota==0)
         {
-            // klient.usunZListyRachunkow();
-            // TODO: 18.09.2020 // zaimplementuj połączenie( kazdy rachunek musi byc w jakims banku i byc jakiegos klienta)
+            this.usunZListyRachunkow(this);
         }
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(typRachunku, stanRachunku);
+        return Objects.hash(typRachunku,stanRachunku,getImie(),getNazwisko(),getPesel(),getNazwa());
     }
 }
